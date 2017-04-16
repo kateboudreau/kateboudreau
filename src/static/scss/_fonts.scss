@@ -1,0 +1,74 @@
+$font-weight-light: 300;
+$font-weight-regular: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+
+$serif:   'Canela', Georgia, Times;
+$sans:    'Dia', Helvetica, Arial;
+// --------------------------------------------
+// Canela
+// --------------------------------------------
+
+@font-face {
+  font-family: 'Canela Italic';
+  src: url('../fonts/Canela-LightItalic-Web.eot');
+  src: url('../fonts/Canela-LightItalic-Web.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Canela-LightItalic-Web.woff2') format('woff2'),
+  url('../fonts/Canela-LightItalic-Web.woff') format('woff');
+  font-weight: $font-weight-light;
+  font-stretch: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('../fonts/Canela-Light-Web.eot');
+  src: url('../fonts/Canela-Light-Web.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Canela-Light-Web.woff2') format('woff2'),
+  url('../fonts/Canela-Light-Web.woff') format('woff');
+  font-weight: $font-weight-light;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+// --------------------------------------------
+// Dia
+// --------------------------------------------
+
+@font-face {
+  font-family: 'Dia';
+  src: url('../fonts/Dia Black.otf');
+  // src: url('Canela-LightItalic-Web.eot?#iefix') format('embedded-opentype'),
+  // url('Canela-LightItalic-Web.woff2') format('woff2'),
+  // url('Canela-LightItalic-Web.woff') format('woff');
+  font-weight: $font-weight-black;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Dia';
+  src: url('../fonts/Dia Bold.otf');
+  // src: url('Canela-Light-Web.eot?#iefix') format('embedded-opentype'),
+  // url('Canela-Light-Web.woff2') format('woff2'),
+  // url('Canela-Light-Web.woff') format('woff');
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Dia';
+  src: url('../fonts/Dia Regular.otf');
+  // src: url('Canela-Light-Web.eot?#iefix') format('embedded-opentype'),
+  // url('Canela-Light-Web.woff2') format('woff2'),
+  // url('Canela-Light-Web.woff') format('woff');
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+
+

@@ -1,0 +1,208 @@
+// --------------------------------------------
+// Project Page Styles
+// --------------------------------------------
+
+.project-page {
+	width: 100%;
+}
+
+.burghley-page {
+}
+
+.project-sections {
+	height: 100vh;
+	display: flex;
+	width: 100%;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.bounce {
+	align-self: center;
+	display: block;
+	animation: bounce infinite 2.5s ease-in;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+
+	50% {
+		transform: translateY(100%);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+}
+
+.project-paragraph {
+	color: $clr-black;
+	font-size: 20px;
+	line-height: 36px;
+	font-family: $sans;
+	font-weight: $font-weight-regular;
+	width: 80%;
+	align-self: center;
+	display: block;
+	text-align: center;
+
+	@include mq($tablet) {
+		width: 50%;
+		font-size: 28px;
+		line-height: 44px;
+		text-align: left;
+	}
+}
+
+
+.project-secondary-paragraph {
+	color: $clr-black;
+	font-size: 18px;
+	line-height: 32px;
+	font-family: $sans;
+	font-weight: $font-weight-regular;
+	width: 80%;
+	align-self: center;
+	display: inline-block;
+
+	@include mq($tablet) {
+		font-size: 22px;
+		line-height: 38px;
+		width: 50%;
+	}
+}
+
+.white {
+	color: $clr-white;
+	opacity: 0.8;
+}
+
+.project-image {
+	width: 80%;
+	height: auto;
+	align-self: center;
+	margin: 0 auto;
+	display: block;
+
+	@include mq($tablet) {
+		width: 50%;
+	}
+}
+
+.img-section {
+	background-image: url('../img/burghley-house.jpg');
+	background-size: cover;
+	position: relative;
+	&::before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(78,145,243,0.2);
+	}
+}
+
+.img-section.snob-img {
+	background-image: url('../img/snob_bg.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	&::before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(245,90,91,0.5);
+	}
+}
+
+.img-section.greenland-img {
+	background-image: url('../img/greenland-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	&::before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(53,53,95,0.2);
+	}
+}
+
+.img-section.flylo-img {
+	background-image: url('../img/flylo-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	&::before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255,41,76,0.4);
+	}
+}
+
+.img-section.witold-img {
+	background-image: url('../img/gombrowicz-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	&::before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+	}
+}
+
+.img-section.luxury-img {
+	background-image: url('../img/luxury-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	&::before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255,202,188,0.5);
+	}
+}
+
+video {
+	align-self: center;
+	margin: 0 auto 40px auto;
+	display: block;
+	box-shadow: 5px 5px 20px #999;
+
+	@include mq($tablet) {
+		margin: 40px auto;
+	}
+}
+
+.project-sections.large-sections {
+	height: auto;
+	margin-top: 40px;
+
+}

@@ -1,0 +1,159 @@
+nav {
+    &::after {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    // background-color: white;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    mix-blend-mode: normal;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: block;
+      position: fixed;
+      width: auto;
+      height: auto;
+      z-index: 1200;
+      font-family: $sans;
+      color: $clr-black;
+      font-size: 13px;
+      font-weight: $font-weight-bold;
+      letter-spacing: 0.6px;
+
+      a {
+        font-family: 'Dia', $sans;
+        color: $clr-black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#nav-social {
+  left: 30px;
+  top: 20px;
+  height: 25px;
+  width: auto;
+
+  @include mq($tablet) {
+    height: 18px;
+  }
+}
+
+.social-logo {
+  fill: $clr-black;
+  font-size: 18px;
+
+  @include mq($tablet) {
+    font-size: 13px;
+  }
+}
+
+#social_behance {
+  
+}
+
+#social_linked-in {
+  
+}
+
+#social_instagram {
+  
+}
+
+.social-logo::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  bottom: 1px;
+  left: -1px;
+  background-color: $clr-black;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: 0.3s ease-in-out;
+}
+
+.nav-social_list {
+  display: flex;
+  flex-direction: vertical;
+  position: relative;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  li {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    display: block;
+    position: relative;
+    &:hover {
+      .social-logo::after {
+        visibility: hidden;
+        transform: scaleX(1);
+
+        @include mq($tablet) {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+#nav-desc {
+  bottom: 0px;
+  left: 10px;
+  padding: 20px;
+  h1 {
+    position: relative;
+    font-size: 13px;
+  }
+}
+
+#nav-desc h1::after {
+  content: '';
+  width: 99%;
+  height: 1px;
+  background-color: $clr-black;
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 1px;
+  visibility: visible;
+}
+
+.nav-contents {
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+    a::after {
+      content: '';
+      position: absolute;
+      width: 99%;
+      height: 1px;
+      bottom: 2px;
+      right: 1px;
+      background-color: $clr-black;
+      transform: scaleX(0);
+      transition: 0.3s ease-in-out;
+    }
+  &:hover {
+    a::after {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+}
+
+#close-btn {
+  color: $clr-white;
+}

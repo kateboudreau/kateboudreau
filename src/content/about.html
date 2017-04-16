@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="JqBdwAOIRp2EQ7kJ1e2Fu0Zb3xMid5EYOhgO4hyiP_M"/>
+  <meta name="description" content="Kate Boudreau">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kate Boudreau | Graphic Designer</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/office-code-pro" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="https://use.fontawesome.com/790331bd9e.js"></script>
+  
+</head>
+<body>
+<!--MAIN NAVIGATION-->
+<nav class="main-nav">
+  <ul>
+    <li id="nav-social">
+      <ul class="nav-social_list">
+      <li><a href="http://instagram.com/kate.cb" class="social-logo" id="social_instagram" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/kate-boudreau-307baa90" class="social-logo" id="social_linked-in" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+        <li><a href="http://be.net/kateboudreau" class="social-logo" id="social_behance" title="Behance" target="_blank"><i class="fa fa-behance-square" aria-hidden="true"></i></a></li>
+      </ul>
+    </li>
+    <li id="nav-desc"><h1><a href="index.html">kate boudreau</a></h1></li>
+    <li class="nav-contents"><a href="#">contents</a></li>
+  </ul>
+</nav>
+<!--END MAIN NAVIGATION-->
+
+<!--OVERLAY NAVIGATION-->
+<div class="navigation-wrapper">
+  <ul class="navigation">
+    <li class="navigation-main"><a href="about.html">about</a></li>
+    <li class="navigation-main"><a href="../static/img/curriculum-vitae-2017.pdf" target="_blank">curriculum vitae</a></li>
+    <li class="navigation-main"><a href="mailto:hello@kate.works?subject=howdy">get in touch</a></li>
+    <li><ul class="navigation_social-nav">
+          <li>Follow on</li>
+          <li><a href="https://www.behance.net/kateboudreau" target="_blank">Behance</a></li>
+          <li><a href="https://twitter.com/kateboudoir" target="_blank">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/kate-boudreau-307baa90" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/kate.cb" target="_blank">Instagram</a></li></ul></li>
+  </ul>
+  <a class="nav-contents" id="close-btn">close</a>
+</div>
+<!--END OVERLAY NAVIGATION-->
+
+<!--ABOUT KATE-->
+<section class="about block">
+  <div class="wrapper">
+    <p class="about-kate animated">
+      Hello! I'm <span class="p-link reveal-kate">Kate Boudreau<img src="http://i.imgur.com/y56WI.gif" alt="kate boudreau" class="kate-image"></span>, a graphic designer anticipating graduation from Massachusetts College of Art and Design in May 2017 with a BFA in Graphic Design.
+    </p>
+    <p class="about-kate animated">I began my education at Connecticut College in New London, Connecticut, where I pursued an interest in the intersection between computer science and fine arts, as well as developed my skills as a analytical thinker and writer. Eventually, I moved on to RISD's SIGDS, and finally, to MassArt, allowing me to build a strong foundation in graphic design, with a focus on how it can be used to build innovative web experiences.
+    </p>
+    <p class="about-kate animated">
+    Most recently, I worked at <a class="p-link" href="https://www.upstatement.com/" target="_blank">Upstatement</a> as a Design Apprentice. This opportunity not only allowed me to gain experience collaborating with a multi-disciplinary team, but taught me an enormous amount about front-end development and designing for digital platforms. 
+    </p>    
+    <p class="about-kate animated">
+    I'm currently exploring what comes next in my graphic design career. Have a look at my <a class="p-link" href="../static/img/curriculum-vitae-2017.pdf" target="_blank">résumé</a>, and let's <a class="p-link" href="mailto:hello@kate.works?subject=howdy">chat</a>!</p>
+    </p>
+  </div>
+</section>
+<!--END PROJECT LIST-->
+
+<!--ABOUT FOOTER-->
+<section class="bio block">
+<div class="wrapper">
+  <p class="bio-description" data-scroll="toggle(.fromLeftIn, .fromLeftOut)"><span class="dia">kate boudreau</span> is a Graphic Designer  who codes. Based in Boston, she seeks to provide progressive digital and print experiences, rooted  in strong design fundamentals.</p>
+</div>
+</section>
+<!--END ABOUT FOOTER-->
+
+<!-- <div class="float-button">
+<marquee><a href="https://media.tenor.co/images/2201df0c8c1204e9e7bc0bec108be3e9/tenor.gif">Curriculum Vitae</a></marquee></div> -->
+<script src="/static/js/ScrollTrigger.min.js"></script>
+<script>
+window.counter = function() {
+  // this refers to the html element with the data-scroll-showCallback tag
+  var span = this.querySelector('span');
+  var current = parseInt(span.textContent);
+
+  span.textContent = current + 1;
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+  var trigger = new ScrollTrigger({
+    addHeight: true
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="JqBdwAOIRp2EQ7kJ1e2Fu0Zb3xMid5EYOhgO4hyiP_M"/>
+  <meta name="description" content="Kate Boudreau">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flying Lotus Box Set | Kate Boudreau</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/office-code-pro" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="https://use.fontawesome.com/790331bd9e.js"></script>
+  
+</head>
+<body>
+<!--MAIN NAVIGATION-->
+<nav class="main-nav">
+  <ul>
+    <li id="nav-social">
+      <ul class="nav-social_list">
+      <li><a href="http://instagram.com/kate.cb" class="social-logo" id="social_instagram" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/kate-boudreau-307baa90" class="social-logo" id="social_linked-in" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+        <li><a href="http://be.net/kateboudreau" class="social-logo" id="social_behance" title="Behance" target="_blank"><i class="fa fa-behance-square" aria-hidden="true"></i></a></li>
+      </ul>
+    </li>
+    <li id="nav-desc"><h1><a href="index.html">kate boudreau</a></h1></li>
+    <li class="nav-contents"><a href="#">contents</a></li>
+  </ul>
+</nav>
+<!--END MAIN NAVIGATION-->
+
+<!--OVERLAY NAVIGATION-->
+<div class="navigation-wrapper">
+  <ul class="navigation">
+    <li class="navigation-main"><a href="about.html">about</a></li>
+    <li class="navigation-main"><a href="../static/img/curriculum-vitae-2017.pdf" target="_blank">curriculum vitae</a></li>
+    <li class="navigation-main"><a href="mailto:hello@kate.works?subject=howdy">get in touch</a></li>
+    <li><ul class="navigation_social-nav">
+          <li>Follow on</li>
+          <li><a href="https://www.behance.net/kateboudreau" target="_blank">Behance</a></li>
+          <li><a href="https://twitter.com/kateboudoir" target="_blank">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/kate-boudreau-307baa90" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/kate.cb" target="_blank">Instagram</a></li></ul></li>
+  </ul>
+  <a class="nav-contents" id="close-btn">close</a>
+</div>
+<!--END OVERLAY NAVIGATION-->
+
+<!--PROJECT LIST-->
+<section class="project-page burghley-page">
+  <div class="project-sections"><p class="project-paragraph animated">Assembling three albums into a journey through life, death, and the afterlife, the Flying Lotus Box Set uses digital collage and typographic texture to explore the sounds and influences of Steven Ellison's music.</p><div class="bounce"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></div></div>
+  <div class="project-sections img-section flylo-img"><p class="project-secondary-paragraph white" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">In an attempt to visually mimic the audial and emotional textures of Ellison's work, the catalog utilizes vivid collages of imagery and type to walk the viewer through the evolving emotions of Los Angeles, Cosmogramma, and You're Dead.</div>
+  <div class="project-sections">
+  <p class="project-secondary-paragraph" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">The physical form of the catalog itself references the layering of influences and sounds through the use of different page sizes that obscure and highlight text and image at curated points.</p>
+  </div>
+  <div class="project-sections large-sections">
+    
+  </div>
+
+</section>
+<!--END PROJECT LIST-->
+
+<!--ABOUT FOOTER-->
+<section class="bio block">
+<div class="wrapper">
+  <p class="bio-description" data-scroll="toggle(.fromLeftIn, .fromLeftOut)"><span class="dia">kate boudreau</span> is a Graphic Designer  who codes.  Based in Boston, she seeks to provide progressive digital and print experiences, rooted  in strong design fundamentals.</p>
+</div>
+</section>
+<!--END ABOUT FOOTER-->
+
+<!-- <div class="float-button">
+<marquee><a href="https://media.tenor.co/images/2201df0c8c1204e9e7bc0bec108be3e9/tenor.gif">Curriculum Vitae</a></marquee></div> -->
+<script src="/static/js/ScrollTrigger.min.js"></script>
+<script>
+window.counter = function() {
+  // this refers to the html element with the data-scroll-showCallback tag
+  var span = this.querySelector('span');
+  var current = parseInt(span.textContent);
+
+  span.textContent = current + 1;
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+  var trigger = new ScrollTrigger({
+    addHeight: true
+  });
+});
+</script>
+
+</body>
+</html>

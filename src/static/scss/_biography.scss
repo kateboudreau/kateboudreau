@@ -1,0 +1,23 @@
+// --------------------------------------------
+// Biography Footer
+// --------------------------------------------
+
+.bio {
+  background-color: $clr-tan;
+}
+
+.bio-description {
+  font-family: $serif;
+  font-size: 20px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 33px;
+  font-weight: $font-weight-light;
+
+  @include mq($tablet) {
+    width: 60%;
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
