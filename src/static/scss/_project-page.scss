@@ -18,6 +18,41 @@
 	flex-direction: column;
 }
 
+.back-to-index {
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 100px;
+
+	a {
+		font-family: $sans;
+		position: relative;
+		text-decoration: none;
+		color: $clr-black;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.7px;
+		transition: 0.2 ease-in-out;
+		align-self: center;
+		&::before {
+			content: '←';
+			font-family: OfficeCodeProDRegular, monospace;
+     		position: relative;
+      		font-weight: 400;
+      		transition: 0.2s ease-in-out;
+      		bottom: 0px;
+      		left: -5px;
+		}
+	}
+
+	a:hover {
+		&::before {
+			left: -10px;
+		}
+	}
+}
+
 .bounce {
 	align-self: center;
 	display: block;
