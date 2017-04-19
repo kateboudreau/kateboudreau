@@ -552,6 +552,46 @@ nav ul {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.back-to-index {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px; }
+  .back-to-index a {
+    font-family: "Dia", Helvetica, Arial;
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    -webkit-transition: 0.2 ease-in-out;
+    transition: 0.2 ease-in-out;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center; }
+    .back-to-index a::before {
+      content: '←';
+      font-family: OfficeCodeProDRegular, monospace;
+      position: relative;
+      font-weight: 400;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
+      bottom: 0px;
+      left: -5px; }
+  .back-to-index a:hover::before {
+    left: -10px; }
+
 .bounce {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
