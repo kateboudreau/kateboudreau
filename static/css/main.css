@@ -212,8 +212,8 @@ nav ul {
 .burghley-image {
   display: none;
   position: absolute;
-  left: -500px;
-  bottom: 50px; }
+  left: -550px;
+  bottom: 100px; }
 
 .reveal-greenland {
   cursor: pointer; }
@@ -224,8 +224,10 @@ nav ul {
 .greenland-image {
   display: none;
   position: absolute;
+  height: 300px;
+  width: auto;
   left: -600px;
-  bottom: 100px; }
+  top: 0px; }
 
 .reveal-flylo {
   cursor: pointer; }
@@ -248,6 +250,8 @@ nav ul {
 .snob-image {
   display: none;
   position: absolute;
+  height: 300px;
+  width: auto;
   left: -500px;
   bottom: 10px; }
 
@@ -260,7 +264,9 @@ nav ul {
 .witold-image {
   display: none;
   position: absolute;
-  left: -400px;
+  height: 220px;
+  width: auto;
+  left: -700px;
   bottom: 40px; }
 
 .reveal-luxury {
@@ -272,7 +278,7 @@ nav ul {
 .luxury-image {
   display: none;
   position: absolute;
-  left: -400px;
+  left: -500px;
   bottom: 40px; }
 
 .bio {
