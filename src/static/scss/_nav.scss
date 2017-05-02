@@ -37,13 +37,14 @@ nav {
 }
 
 #nav-social {
-  left: 30px;
-  top: 20px;
-  height: 25px;
-  width: auto;
+  display: none;
 
   @include mq($tablet) {
     height: 18px;
+    left: 30px;
+    top: 20px;
+    width: auto;
+    display: block;
   }
 }
 
@@ -54,18 +55,6 @@ nav {
   @include mq($tablet) {
     font-size: 13px;
   }
-}
-
-#social_behance {
-  
-}
-
-#social_linked-in {
-  
-}
-
-#social_instagram {
-  
 }
 
 .social-logo::after {
@@ -108,12 +97,17 @@ nav {
 }
 
 #nav-desc {
-  bottom: 0px;
   left: 10px;
   padding: 20px;
   h1 {
     position: relative;
     font-size: 13px;
+  }
+
+  @include mq($tablet) {
+    bottom: 0px;
+    left: 10px;
+    padding: 20px;
   }
 }
 
@@ -130,11 +124,16 @@ nav {
 }
 
 .nav-contents {
-  bottom: 30px;
   right: 30px;
+  margin-top: 30px;
   cursor: pointer;
   transition: 0.3s;
   display: block;
+
+  @include mq($tablet) {
+    bottom: 30px;
+    margin-top: 0;
+  }
     a::after {
       content: '';
       position: absolute;
@@ -156,4 +155,6 @@ nav {
 
 #close-btn {
   color: $clr-white;
+  @include mq($tablet) {
+  }
 }

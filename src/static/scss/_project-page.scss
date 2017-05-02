@@ -157,7 +157,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(245,90,91,0.5);
+		background-color: rgba(245,90,91,0.2);
 	}
 }
 
@@ -230,14 +230,51 @@ video {
 	margin: 0 auto 40px auto;
 	display: block;
 	box-shadow: 5px 5px 20px #999;
+	width: 100%;
+	height: auto;
 
 	@include mq($tablet) {
 		margin: 40px auto;
+		width: 70%;
 	}
 }
 
 .project-sections.large-sections {
 	height: auto;
 	margin-top: 40px;
+}
 
+.desktop-img {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0 auto 40px auto;
+
+	@include mq($tablet) {
+		width: 70%;
+	}
+}
+
+.desktop-img.white-space {
+	width: 80%;
+
+	@include mq($tablet) {
+		width: 70%;
+	}
+}
+
+.desktop-img.border {
+	border: 0.5px $clr-black solid;
+}
+
+.project-img {
+	width: 70%;
+	height: auto;
+	position: relative;
+	margin: 20px auto;
+}
+
+.project-sections.img-only {
+	height: auto;
+	margin-top: 160px;
 }

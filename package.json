@@ -5,12 +5,10 @@
   },
   "main": "index.js",
   "scripts": {
-    
     "start": "node index.js",
     "postinstall": "bower install && if [ \"$NODE_ENV\" = \"production\" ]; then gulp puppy-build --optimized; else gulp puppy-build; fi"
   },
   "dependencies": {
-    
     "bower": "^1.7.9",
     "del": "^2.0.2",
     "express": "^4.13.3",
@@ -23,9 +21,7 @@
     "gulp-htmlmin": "^1.3.0",
     "gulp-if": "^2.0.0",
     "gulp-load-plugins": "^1.0.0-rc.1",
-    
     "gulp-modernizr": "1.0.0-alpha",
-    
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
     "gulp-sort": "^2.0.0",
@@ -35,9 +31,6 @@
     "gulp-useref": "^3.0.8",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.3.5",
-    
-    
-    
     "merge": "^1.2.0",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.4",
@@ -45,6 +38,7 @@
     "showdown": "^1.4.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.9.9"
+    "browser-sync": "^2.9.9",
+    "gulp-gh-pages": "^0.5.4"
   }
 }

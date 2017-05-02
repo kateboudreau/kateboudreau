@@ -47,6 +47,9 @@
     &:hover {
       .kate-image {
         display: block;
+        width: 300px;
+        height: auto;
+        opacity: 0.5;
       }
     }
   }
@@ -55,6 +58,6 @@
 .kate-image {
   display: none;
   position: absolute;
-  left: -220px;
+  left: -300px;
   bottom: -300px;
 }
