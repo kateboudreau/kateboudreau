@@ -211,7 +211,12 @@ nav ul {
   opacity: 1; }
   .project-list-item a {
     text-decoration: none;
-    color: #000000; }
+    color: #000000;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 0.3px; }
+    .project-list-item a:hover {
+      color: #bcbbb6; }
   @media (min-width: 850px) {
     .project-list-item {
       font-size: 3.8vw; } }
@@ -220,15 +225,19 @@ nav ul {
   cursor: pointer; }
   @media (min-width: 850px) {
     .reveal-burghley:hover .burghley-image {
-      display: block; } }
+      opacity: 1;
+      bottom: 110px; } }
 
 .burghley-image {
-  display: none;
+  display: block;
   position: absolute;
   width: 350px;
   height: auto;
   left: -400px;
-  bottom: 100px; }
+  bottom: 100px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
   @media (min-width: 1240px) {
     .burghley-image {
       width: 400px;
@@ -239,15 +248,19 @@ nav ul {
   cursor: pointer; }
   @media (min-width: 850px) {
     .reveal-greenland:hover .greenland-image {
-      display: block; } }
+      opacity: 1;
+      top: -60px; } }
 
 .greenland-image {
-  display: none;
+  display: block;
   position: absolute;
   height: 300px;
   width: auto;
   left: -450px;
-  top: -70px; }
+  top: -70px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease; }
   @media (min-width: 1240px) {
     .greenland-image {
       left: -600px;
@@ -258,15 +271,19 @@ nav ul {
   cursor: pointer; }
   @media (min-width: 850px) {
     .reveal-flylo:hover .flylo-image {
-      display: block; } }
+      opacity: 1;
+      bottom: 170px; } }
 
 .flylo-image {
-  display: none;
+  display: block;
   position: absolute;
   left: -500px;
   bottom: 160px;
   height: 300px;
-  width: auto; }
+  width: auto;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 0; }
   @media (min-width: 1240px) {
     .flylo-image {
       left: -600px; } }
@@ -275,29 +292,37 @@ nav ul {
   cursor: pointer; }
   @media (min-width: 850px) {
     .reveal-snob:hover .snob-image {
-      display: block; } }
+      opacity: 1;
+      bottom: 20px; } }
 
 .snob-image {
-  display: none;
+  display: block;
   position: absolute;
   height: 300px;
   width: auto;
   left: -500px;
-  bottom: 10px; }
+  bottom: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 0; }
 
 .reveal-witold {
   cursor: pointer; }
   @media (min-width: 850px) {
     .reveal-witold:hover .witold-image {
-      display: block; } }
+      opacity: 1;
+      bottom: 50px; } }
 
 .witold-image {
-  display: none;
+  display: block;
   position: absolute;
   height: 220px;
   width: auto;
   left: -500px;
-  bottom: 40px; }
+  bottom: 40px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease; }
   @media (min-width: 1240px) {
     .witold-image {
       left: -700px; } }
@@ -306,10 +331,14 @@ nav ul {
   cursor: pointer; }
   @media (min-width: 850px) {
     .reveal-luxury:hover .luxury-image {
-      display: block; } }
+      opacity: 1;
+      bottom: -30px; } }
 
 .luxury-image {
-  display: none;
+  display: block;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   position: absolute;
   left: -520px;
   bottom: -40px; }
@@ -589,11 +618,11 @@ nav ul {
   font-weight: 700;
   position: relative;
   border-bottom: 1px solid #000000;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   cursor: pointer; }
   .p-link:hover {
-    border-bottom: 1px solid #ffcabc; }
+    border-bottom: 1px solid #bcbbb6; }
 
 @media (min-width: 850px) {
   .reveal-kate:hover .kate-image {
@@ -630,6 +659,16 @@ nav ul {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+@inlcude mq($phablet) {
+  .project-sections {
+    height: 100vh; } }
+
+.xtra-padding {
+  padding: 0; }
+  @media (min-width: 850px) {
+    .xtra-padding {
+      padding: 50px 0; } }
 
 .back-to-index {
   width: 100%;
