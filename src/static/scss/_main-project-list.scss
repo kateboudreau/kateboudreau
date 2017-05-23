@@ -48,19 +48,18 @@
 }
 
 .reveal-burghley {
-  cursor: pointer;
   @include mq($tablet) {
     &:hover {
       .burghley-image {
         opacity: 1;
         bottom: 110px;
+        visibility: visible;
       }
     }
   }
 }
 
 .burghley-image {
-  display: block;
   position: absolute;
   width: 350px;
   height: auto;
@@ -68,6 +67,7 @@
   bottom: 100px;
   opacity: 0;
   transition: 0.3s;
+  visibility: hidden;
 
   @include mq($desktop-xl) {
     width: 400px;
@@ -77,12 +77,12 @@
 }
 
 .reveal-greenland {
-  cursor: pointer;
   @include mq($tablet) {
     &:hover {
       .greenland-image {
         opacity: 1;
         top: -60px;
+        visibility: visible;
       }
     }
   }
@@ -97,6 +97,7 @@
   top: -70px;
   opacity: 0;
   transition: 0.3s ease;
+  visibility: hidden;
 
   @include mq($desktop-xl) {
     left: -600px;
@@ -106,12 +107,12 @@
 }
 
 .reveal-flylo {
-  cursor: pointer;
   @include mq($tablet) {
     &:hover {
       .flylo-image {
         opacity: 1;
         bottom: 170px;
+        visibility: visible;
       }
     }
   }
@@ -126,6 +127,7 @@
   width: auto;
   transition: 0.3s ease;
   opacity: 0;
+  visibility: hidden;
 
   @include mq($desktop-xl) {
     left: -600px;
@@ -133,18 +135,19 @@
 }
 
 .reveal-snob {
-  cursor: pointer;
   @include mq($tablet) {
     &:hover {
       .snob-image {
         opacity: 1;
         bottom: 20px;
+        visibility: visible;
       }
     }
   }
 }
 
 .snob-image {
+  visibility: hidden;
   display: block;
   position: absolute;
   height: 300px;
@@ -156,18 +159,19 @@
 }
 
 .reveal-witold {
-  cursor: pointer;
   @include mq($tablet) {
     &:hover {
       .witold-image {
         opacity: 1;
         bottom: 50px;
+        visibility: visible;
       }
     }
   }
 }
 
 .witold-image {
+  visibility: hidden;
   display: block;
   position: absolute;
   height: 220px;
@@ -183,18 +187,19 @@
 }
 
 .reveal-luxury {
-  cursor: pointer;
   @include mq($tablet) {
     &:hover {
       .luxury-image {
         opacity: 1;
         bottom: -30px;
+        visibility: visible;
       }
     }
   }
 }
 
 .luxury-image {
+  visibility: hidden;
   display: block;
   opacity: 0;
   transition: 0.3s ease;
