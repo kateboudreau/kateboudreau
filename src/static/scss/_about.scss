@@ -34,11 +34,11 @@
 	font-weight: $font-weight-bold;
 	position: relative;
 	border-bottom: 1px solid $clr-black;
-	transition: 0.3s ease-in-out;
+	transition: 0.3s ease;
 	cursor: pointer;
 
 	&:hover {
-		border-bottom: 1px solid $clr-pink;
+		border-bottom: 1px solid $clr-gray;
 	}	
 }
 
