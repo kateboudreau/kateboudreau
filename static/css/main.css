@@ -663,6 +663,13 @@ nav ul {
   .project-sections {
     height: 100vh; } }
 
+.project-sections.on-mobile {
+  height: auto;
+  padding: 0  0 80px 0; }
+  @media (min-width: 550px) {
+    .project-sections.on-mobile {
+      height: 100vh; } }
+
 .xtra-padding {
   padding: 0; }
   @media (min-width: 850px) {
