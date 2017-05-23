@@ -221,15 +221,13 @@ nav ul {
     .project-list-item {
       font-size: 3.8vw; } }
 
-.reveal-burghley {
-  cursor: pointer; }
-  @media (min-width: 850px) {
-    .reveal-burghley:hover .burghley-image {
-      opacity: 1;
-      bottom: 110px; } }
+@media (min-width: 850px) {
+  .reveal-burghley:hover .burghley-image {
+    opacity: 1;
+    bottom: 110px;
+    visibility: visible; } }
 
 .burghley-image {
-  display: block;
   position: absolute;
   width: 350px;
   height: auto;
@@ -237,19 +235,19 @@ nav ul {
   bottom: 100px;
   opacity: 0;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  visibility: hidden; }
   @media (min-width: 1240px) {
     .burghley-image {
       width: 400px;
       height: auto;
       left: -550px; } }
 
-.reveal-greenland {
-  cursor: pointer; }
-  @media (min-width: 850px) {
-    .reveal-greenland:hover .greenland-image {
-      opacity: 1;
-      top: -60px; } }
+@media (min-width: 850px) {
+  .reveal-greenland:hover .greenland-image {
+    opacity: 1;
+    top: -60px;
+    visibility: visible; } }
 
 .greenland-image {
   display: block;
@@ -260,19 +258,19 @@ nav ul {
   top: -70px;
   opacity: 0;
   -webkit-transition: 0.3s ease;
-  transition: 0.3s ease; }
+  transition: 0.3s ease;
+  visibility: hidden; }
   @media (min-width: 1240px) {
     .greenland-image {
       left: -600px;
       height: 300px;
       width: auto; } }
 
-.reveal-flylo {
-  cursor: pointer; }
-  @media (min-width: 850px) {
-    .reveal-flylo:hover .flylo-image {
-      opacity: 1;
-      bottom: 170px; } }
+@media (min-width: 850px) {
+  .reveal-flylo:hover .flylo-image {
+    opacity: 1;
+    bottom: 170px;
+    visibility: visible; } }
 
 .flylo-image {
   display: block;
@@ -283,19 +281,20 @@ nav ul {
   width: auto;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  opacity: 0; }
+  opacity: 0;
+  visibility: hidden; }
   @media (min-width: 1240px) {
     .flylo-image {
       left: -600px; } }
 
-.reveal-snob {
-  cursor: pointer; }
-  @media (min-width: 850px) {
-    .reveal-snob:hover .snob-image {
-      opacity: 1;
-      bottom: 20px; } }
+@media (min-width: 850px) {
+  .reveal-snob:hover .snob-image {
+    opacity: 1;
+    bottom: 20px;
+    visibility: visible; } }
 
 .snob-image {
+  visibility: hidden;
   display: block;
   position: absolute;
   height: 300px;
@@ -306,14 +305,14 @@ nav ul {
   transition: 0.3s ease;
   opacity: 0; }
 
-.reveal-witold {
-  cursor: pointer; }
-  @media (min-width: 850px) {
-    .reveal-witold:hover .witold-image {
-      opacity: 1;
-      bottom: 50px; } }
+@media (min-width: 850px) {
+  .reveal-witold:hover .witold-image {
+    opacity: 1;
+    bottom: 50px;
+    visibility: visible; } }
 
 .witold-image {
+  visibility: hidden;
   display: block;
   position: absolute;
   height: 220px;
@@ -327,14 +326,14 @@ nav ul {
     .witold-image {
       left: -700px; } }
 
-.reveal-luxury {
-  cursor: pointer; }
-  @media (min-width: 850px) {
-    .reveal-luxury:hover .luxury-image {
-      opacity: 1;
-      bottom: -30px; } }
+@media (min-width: 850px) {
+  .reveal-luxury:hover .luxury-image {
+    opacity: 1;
+    bottom: -30px;
+    visibility: visible; } }
 
 .luxury-image {
+  visibility: hidden;
   display: block;
   opacity: 0;
   -webkit-transition: 0.3s ease;
