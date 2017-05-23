@@ -16,6 +16,18 @@
 	align-content: center;
 	justify-content: center;
 	flex-direction: column;
+
+	@inlcude mq($phablet) {
+		height: 100vh;
+	}
+}
+
+.xtra-padding {
+	padding:0;
+
+	@include mq($tablet) {
+		padding: 50px 0;
+	}	
 }
 
 .back-to-index {
