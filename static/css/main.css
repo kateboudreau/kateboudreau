@@ -350,14 +350,14 @@ nav ul {
   font-size: 20px;
   width: 90%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   line-height: 33px;
   font-weight: 300; }
   @media (min-width: 850px) {
     .bio-description {
       width: 60%;
       font-size: 28px;
-      line-height: 36px; } }
+      line-height: 38px; } }
 
 .contents-nav {
   display: none;
