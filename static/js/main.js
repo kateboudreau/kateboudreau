@@ -14,3 +14,8 @@ $(document).ready(function() {
 	});
   
 });
+
+$.getJSON('http://http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=kateboudreau&api_key=8bb431899cec4eb655c81217332292f3&format=json', function(data) {
+  var track = data.recenttracks.track[0]
+  $('#lastfm').html(track.artist["#text"])
+});
