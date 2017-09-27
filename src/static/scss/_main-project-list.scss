@@ -9,11 +9,11 @@
 
   @include mq($tablet) {
     text-align: left;
-    margin-left: 50%;
+    margin-left: 65%;
   }
 
   @include mq($desktop) {
-    margin-left: 55%;
+    margin-left: 65%;
     text-align: left;
   }
 }
@@ -39,7 +39,7 @@
   }
 
   @include mq($tablet) {
-    font-size: 3.8vw;
+    font-size: 28px;
   }
 
   @include mq($desktop) {
