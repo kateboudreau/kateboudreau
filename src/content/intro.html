@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hello friends</title>
+
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+
+<!--     <script type="text/javascript">
+      var nextWord = (function() {
+      var wordArray = ['kate', 'from Boston', 'a recent graduate of MassArt', 'a jr. designer on wizardwizard'];
+      var count = -1;
+      return function() {
+        return wordArray[++count % wordArray.length];
+      }
+      }());
+
+      <span class="change-serif" id="change" onclick="document.getElementById('change').innerHTML = nextWord();">kate</span>
+    </script> -->
+
+    <div class="container">
+
+    <h1 class="text-change">hello, i'm </h1>
+
+    </div>
+ <!--    <div class="section zero"></div> -->
+    <div class="section one">
+      <h1 class="change-serif" data-scroll="toggle(.fromTopIn2, .fromTopOut2) offset(300px,0)">kate</h1>
+    </div>
+    <div class="section two">
+      <h1 class="change-serif reveal-boston" data-scroll="toggle(.fromTopIn2, .fromTopOut2) offset(300px,200px)">from Boston<img src="https://paulciano.org/avox/wp-content/uploads/2016/12/BackToStarbucks-1.gif" class="boston-image"></h1>
+    </div>
+    <div class="section three">
+      <h1 class="change-serif reveal-massart" data-scroll="toggle(.fromTopIn2, .fromTopOut2) offset(300px,200px)">a recent graduate of MassArt<img src="./static/img/intro/bnb.png" class="massart-image m1"><img src="./static/img/intro/snob.gif" class="massart-image m2"><img src="./static/img/intro/witold.gif" class="massart-image m3"><img src="./static/img/intro/burghley-reveal.gif" class="massart-image m4"></h1>
+    </div>
+    <div class="section four">
+      <h1 class="change-serif reveal-wizard" data-scroll="toggle(.fromTopIn2, .fromTopOut2) offset(300px,200px)">a jr. designer on wizardwizard<img src="./static/img/intro/Q.gif" class="wizard-image"></h1>
+    </div>
+    <div class="section five" data-scroll="toggle(.fromTopIn2, .fromTopOut2)"><h1 class="change-serif end" data-scroll="toggle(.fromTopIn, .fromTopOut) offset(300px,200px)">done! thanks!</h1></div>
+
+<script src="/static/js/ScrollTrigger.min.js"></script>
+<script>
+window.counter = function() {
+  // this refers to the html element with the data-scroll-showCallback tag
+  var span = this.querySelector('span');
+  var current = parseInt(span.textContent);
+  span.textContent = current + 1;
+};
+document.addEventListener('DOMContentLoaded', function(){
+  var trigger = new ScrollTrigger({
+    addHeight: true
+  });
+});
+</script>
+  </body>
+</html>

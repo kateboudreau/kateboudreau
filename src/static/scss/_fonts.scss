@@ -69,6 +69,37 @@ $sans:    'Dia', Helvetica, Arial;
   font-stretch: normal;
 }
 
+$serif-saol:   'Saol', arial, Times;
+
+
+@font-face {
+  font-family: 'Saol';
+  src: url('../fonts/Saol Display Demo Regular.otf');
+  font-weight: $font-weight-regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Saol';
+  src: url('../fonts/Saol Display Demo Regular Italic.otf');
+  font-weight: $font-weight-regular;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Saol';
+  src: url('../fonts/Saol Display Demo Light.otf');
+  font-weight: $font-weight-light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Saol';
+  src: url('../fonts/Saol Display Demo Light Italic.otf');
+  font-weight: $font-weight-light;
+  font-style: italic;
+}
+
 
 
 
