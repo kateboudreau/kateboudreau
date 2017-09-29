@@ -67,22 +67,35 @@
       opacity: 1;
       bottom: -280px;
       visibility: visible;
+      @include mq($desktop-xxl) {
+        bottom: -500px;
+      }
+      @include mq(3000px) {
+        visibility: hidden;
+      }
     }
     .massart-image.m2 {
       opacity: 1;
       bottom: -60px;
       visibility: visible;
+      @include mq(3000px) {
+        bottom: -330px;
+      }
     }
     .massart-image.m3 {
       opacity: 1;
       bottom: 125px;
       visibility: visible;
+
     }
 
     .massart-image.m4 {
       opacity: 1;
       bottom: -330px;
       visibility: visible;
+      @include mq(3000px) {
+        visibility: hidden;
+      }
     }
   }
 
@@ -97,6 +110,9 @@
     height: auto;
     right: 200px;
     bottom: -300px;
+    @include mq($desktop-xxl) {
+      right: 0px;
+    }
   }
 
   .m2 {
@@ -104,6 +120,9 @@
     height: auto;
     right: 0;
     bottom: -30px;
+    @include mq(3000px) {
+      bottom: -300px;
+    }
   }
 
   .m3 {
@@ -111,6 +130,9 @@
     height: auto;
     right: 550px;
     bottom: 100px;
+    @include mq($desktop-xxl) {
+      right: 900px;
+    }
   }
 
   .m4 {
@@ -118,6 +140,10 @@
     height: auto;
     right: 650px;
     bottom: -300px;
+    @include mq($desktop-xxl) {
+      right: 800px;
+      bottom: 10%;
+    }
   }
 }
 
