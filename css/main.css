@@ -408,12 +408,14 @@ h1 {
   text-transform: uppercase;
   transition: .3s ease; }
   .saol:hover {
-    color: #585858; }
+    color: #585858;
+    text-decoration: underline; }
 
 .underline {
-  color: #1f1f21;
+  color: #3c50fc;
+  text-decoration: none;
   transition: .3s ease; }
   .underline:hover {
-    color: #585858; }
+    text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map*/
