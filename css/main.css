@@ -410,6 +410,7 @@ h1 {
 .underline {
   color: #3c50fc;
   text-decoration: none;
+  margin-right: none;
   transition: .3s ease; }
   .underline:hover {
     text-decoration: underline; }
