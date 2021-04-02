@@ -50,14 +50,11 @@ header {
   position: fixed;
   width: 100%; }
 
-nav a {
+a {
   color: #585858;
-  font-family: 'Saol Mono';
-  font-size: 12px;
-  letter-spacing: .75px;
+  font-family: 'Spot Mono';
   margin-right: 30px;
-  text-decoration: none;
-  text-transform: uppercase; }
+  text-decoration: none; }
 
 nav a:last-child {
   margin-right: 0; }
@@ -305,7 +302,7 @@ nav a:last-child {
   background: #bd0a1c; }
 
 body {
-  background: #fffffc;
+  background: #ffffff;
   color: #585858; }
 
 .full-vh {
@@ -392,7 +389,7 @@ h1 {
   width: 85%; }
   @media (min-width: 850px) {
     .intro {
-      font-size: 16px;
+      font-size: 14px;
       margin-bottom: 20px;
       width: 50%; } }
   @media (min-width: 1440px) {
